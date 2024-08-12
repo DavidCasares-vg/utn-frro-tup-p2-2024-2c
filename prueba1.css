@@ -1,0 +1,71 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    color: #242424;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 20px;
+    color: #606060;
+    font-weight: 800;
+}
+
+p {
+    font-size: 14px;
+}
+
+li {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+a {
+    font-style: bold;
+}
+
+a {
+    color: orange;
+}
+
+p {
+    margin: 30px 0px;
+}
+
+li {
+    margin-left: 100px;
+    padding: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+ul {
+    max-width: 40%;
+}
+
+* {
+    background-color: rgb(245, 245, 245);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px, 10px, 10px, 10px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+li:hover a {
+    background-color: rgba(0, 0, 0, -0.1);
+}
