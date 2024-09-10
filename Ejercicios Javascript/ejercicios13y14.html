@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+var numero = parseInt(prompt("Introduce un número:"));
+
+
+var divisores = "";
+
+if (numero % 2 === 0) {
+  divisores += "2";
+}
+if (numero % 3 === 0) {
+  if (divisores) {
+    divisores += ", ";
+  }
+  divisores += "3";
+}
+if (numero % 5 === 0) {
+  if (divisores) {
+    divisores += ", ";
+  }
+  divisores += "5";
+}
+if (numero % 7 === 0) {
+  if (divisores) {
+    divisores += ", ";
+  }
+  divisores += "7";
+}
+
+if (divisores) {
+  document.write("El número es divisible por: " + divisores);
+} else {
+  document.write("El número no es divisible por 2, 3, 5 ni 7.");
+}
+
+
+    </script>
+</body>
+</html>

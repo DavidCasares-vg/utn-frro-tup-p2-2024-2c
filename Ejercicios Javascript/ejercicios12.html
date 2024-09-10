@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let frase = prompt("Introduce una frase:");
+
+// Inicializar un objeto para contar las vocales
+let contadorVocales = {
+  'a': 0,
+  'e': 0,
+  'i': 0,
+  'o': 0,
+  'u': 0,
+  };
+
+for (let i = 0; i < frase.length; i++) {
+  let letra = frase[i];
+  
+  if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') 
+       {
+        contadorVocales[letra]++
+      }
+}
+
+// Preparar el resultado para mostrar
+var resultado = "Número de veces que aparece cada vocal:\n";
+const vocales = ['a', 'e', 'i', 'o', 'u'];
+for (let i = 0; i < vocales.length; i++) {
+  let vocal = vocales[i];
+  resultado += vocal + ": " + contadorVocales[vocal] + "\n";
+}
+
+// Mostrar el resultado
+document.write(resultado);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pedir al usuario una frase
+    var frase = prompt("Introduce una frase:");
+    
+    // Inicializar una cadena para almacenar las vocales encontradas
+    var contador = 0;
+    
+    // Recorrer la frase para identificar las vocales
+    for (let i = 0; i < frase.length; i++) {
+      let letra = frase[i];
+      if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') 
+       {
+        contador++ // Guardar la vocal encontrada
+      }
+      
+    }
+    
+    document.write("El numero de vocales que aparecen es de: ", contador);
+    </script>
+</body>
+</html>
